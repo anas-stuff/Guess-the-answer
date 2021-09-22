@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Devinez la réponse</string>
+    <string name="false_text">Faux</string>
+    <string name="true_text">Vrai</string>
+    <string name="share_question_text">Partagez la question</string>
+    <string name="change_question_text">Changer la question</string>
+    <string name="back_text">Retour</string>
+    <string name="share_title_hint">Entrez un titre pour ce sujet</string>
+    <string name="change_lang_text">Changer la langue</string>
+    <string name="question">Question</string>
+    <string name="the_right_answer_is">la bonne réponse est</string>
+    <string name="share_the_question_with_friends">Partagez la question avec des amis</string>
+
+
+    <string-array name="questions">
+        <item>La monnaie officielle du Koweït est le riyal koweïtien?</item>
+        <item>Le Toubkal est le plus haut sommet du monde arabe?</item>
+        <item>L\'Algérie est le plus grand pays arabe en termes de superficie?</item>
+        <item>Casablanca est la capitale du Maroc?</item>
+        <item>Kaboul est la capitale de l\'Afghanistan?</item>
+        <item>Le plus gros animal invertébré est la méduse?</item>
+        <item>Le pays arabe avec lequel l\'Equateur passe est le Soudan?</item>
+        <item>Le coeur est le plus grand organe du corps humain?</item>
+        <item>La première mosquée de l\'islam est la mosquée du prophète?</item>
+        <item>Votre père est le seul oncle des enfants de votre tante?</item>
+        <item>L\'Équateur est le premier pays producteur de bananes au monde</item>
+        <item>La capitale de l\'Argentine est Bakou?</item>
+        <item>La monnaie du Vietnam est-elle le Dong?</item>
+    </string-array>
+
+    <string-array name="answers_details">
+        <item>La monnaie officielle du Koweït est le riyal koweïtien</item>
+        <item>Topkale est le plus haut sommet du monde arabe situé au Maroc</item>
+        <item>L\'Algérie est le plus grand pays arabe en termes de superficie</item>
+        <item>Rabat est la capitale du Maroc</item>
+        <item>Kaboul est la capitale de l\'Afghanistan</item>
+        <item>Le calmar est le plus gros animal invertébré</item>
+        <item>Le pays arabe avec lequel l\'Equateur passe est la Somalie.</item>
+        <item>Le foie est le plus grand organe du corps humain</item>
+        <item>La mosquée Qebaa est la première mosquée de l\'islam</item>
+        <item>Votre père est le seul oncle des enfants de votre tante</item>
+        <item>Le premier pays producteur de bananes au monde est l\'Equateur</item>
+        <item>La capitale de l\'Argentine est Buenos Aires</item>
+        <item>La monnaie du Vietnam est le Dong</item>
+    </string-array>
+
+</resources>

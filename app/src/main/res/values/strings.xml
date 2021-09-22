@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Guess the answer</string>
+    <string name="false_text">False</string>
+    <string name="true_text">True</string>
+    <string name="share_question_text">Share the question</string>
+    <string name="change_question_text">Change the question</string>
+    <string name="back_text">Return</string>
+    <string name="share_title_hint">Enter a title for this subject</string>
+    <string name="change_lang_text">Change Language</string>
+    <string name="question">Question</string>
+    <string name="the_right_answer_is">The right answer is</string>
+    <string name="share_the_question_with_friends">Share the question with friends</string>
+
+    <string-array name="questions">
+        <item>The official currency of Kuwait is the Kuwaiti riyal?</item>
+        <item>Toubkal is the highest peak in the Arab world?</item>
+        <item>Algeria is the largest Arab country in terms of area?</item>
+        <item>Casablanca is the capital of Morocco?</item>
+        <item>Kabul is the capital of Afghanistan?</item>
+        <item>The biggest invertebrate animal is the jellyfish?</item>
+        <item>The Arab country with which the Equator passes is Sudan?</item>
+        <item>The heart is the largest organ of the human body?</item>
+        <item>The first mosque in Islam is the Prophet\'s Mosque?</item>
+        <item>The only uncle of your aunt\'s children is your father?</item>
+        <item>The world\'s first banana production country is Ecuador?</item>
+        <item>The capital of Argentina is Baku?</item>
+        <item>Vietnam\'s currency is Dong?</item>
+    </string-array>
+
+    <string-array name="answers_details">
+        <item>The official currency of Kuwait is the Kuwaiti riyal</item>
+        <item>Topkale is the highest mountain peak in the Arab world and located in Morocco</item>
+        <item>Algeria is the largest Arab country in terms of area</item>
+        <item>Rabat is the capital of Morocco</item>
+        <item>Kabul is the capital of Afghanistan</item>
+        <item>The biggest invertebrate animal is squid</item>
+        <item>The Arab country with which the Equator passes is Somalia.</item>
+        <item>The liver is the largest organ of the human body</item>
+        <item>The first mosque in Islam is the Qebaa mosque</item>
+        <item>The only uncle of your aunt\'s children is your father</item>
+        <item>The world\'s first banana production country is Ecuador</item>
+        <item>The capital of Argentina is Buenos Aires</item>
+        <item>Vietnam\'s currency is Dong</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>العربية</item>
+        <item>English</item>
+        <item>French</item>
+    </string-array>
+</resources>
