@@ -32,14 +32,14 @@ public class ShareActivity extends AppCompatActivity {
                 startActivity(shareIntent);
 
                 // Save title
-                SharedPreferences sharedPreferences = getSharedPreferences("app pref", MODE_PRIVATE);
+                SharedPreferences sharedPreferences = getSharedPreferences(Constants.APP_PREF, MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString("share title", questionTitle);
+                editor.putString(Constants.SHARE_TITLE, questionTitle);
                 editor.apply();
             });
 
-            SharedPreferences sharedPreferences = getSharedPreferences("app pref", MODE_PRIVATE);
-            String questionTitle = sharedPreferences.getString("share title", "");
+            SharedPreferences sharedPreferences = getSharedPreferences(Constants.APP_PREF, MODE_PRIVATE);
+            String questionTitle = sharedPreferences.getString(Constants.SHARE_TITLE, "");
             mTitleShare.setText(questionTitle);
         }
     }

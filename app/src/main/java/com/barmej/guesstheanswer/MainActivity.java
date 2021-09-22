@@ -3,7 +3,6 @@ package com.barmej.guesstheanswer;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,9 +11,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -49,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        SharedPreferences sharedPreferences = getSharedPreferences("app_pref", MODE_PRIVATE);
-        String appLang = sharedPreferences.getString("app_lang", "");
+        SharedPreferences sharedPreferences = getSharedPreferences(Constants.APP_PREF, MODE_PRIVATE);
+        String appLang = sharedPreferences.getString(Constants.APP_LANG, "");
         if(!appLang.equals(""))
             LocaleHelper.setLocale(this, appLang);
 
@@ -122,9 +118,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void saveLanguage(String language){
-        SharedPreferences sharedPreferences = getSharedPreferences("app_pref", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences(Constants.APP_PREF, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("app_lang", language);
+        editor.putString(Constants.APP_LANG, language);
         editor.apply();
     }
 
@@ -139,19 +135,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void checkAnswer(boolean answer){
-        Toast.makeText(this, "Yor ur answer are " + (answer == mCurrentAnswer), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Your answer are " + (answer == mCurrentAnswer), Toast.LENGTH_SHORT).show();
         if(answer == mCurrentAnswer)
             showQuestion();
         else {
             Intent intent = new Intent(MainActivity.this, AnswerActivity.class);
-            intent.putExtra("question_answer", mCurrentAnswerDetail);
+            intent.putExtra(Constants.QUESTION_ANSWER, mCurrentAnswerDetail);
             startActivity(intent);
         }
     }
 
     private void shareQuestion(){
         Intent intent = new Intent(MainActivity.this, ShareActivity.class);
-        intent.putExtra("question text extra", mCurrentQuestion);
+        intent.putExtra(Constants.QUESTION_TEXT_EXTRA, mCurrentQuestion);
         startActivity(intent);
     }
 }
